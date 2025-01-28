@@ -10,8 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#">Logo</a>
-
+    <?php echo get_custom_logo(); ?>
     
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
