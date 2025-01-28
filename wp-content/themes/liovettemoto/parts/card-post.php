@@ -1,4 +1,11 @@
 <div class="card bg-dark">
+<?php
+  $categories = get_the_category();
+  if (!empty($categories)) {
+      $category_name = $categories[0]->name;
+      ?>
+      <span class="badge text-bg-light"><?php echo esc_html($category_name); ?></span>
+  <?php } ?>
   <?php if (has_post_thumbnail()) : ?>
     <img src="<?php the_post_thumbnail_url('medium'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
     <?php else : ?>
