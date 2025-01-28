@@ -19,7 +19,28 @@ function liovettemoto_register_assets()
   wp_enqueue_style('bootstrap');
   wp_enqueue_script('bootstrap');
   wp_enqueue_style('liovettemoto', get_stylesheet_uri());
+  wp_enqueue_style(
+    'google-font-oleo',
+    'https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap',
+    [],
+    null
+);
+}
+
+// Pour les li dans le header
+function liovettemoto_menu_class(array $classes): array
+{
+  $classes[] = 'nav-item';
+  return $classes;
+}
+// Pour les liens dans le header
+function liovettemoto_menu_link_class(array $atts): array
+{
+  $atts['class'] = 'nav-link';
+  return $atts;
 }
 
 add_action('after_setup_theme', 'liovettemoto_support'); 
 add_action('wp_enqueue_scripts', 'liovettemoto_register_assets');
+add_filter('nav_menu_css_class', 'liovettemoto_menu_class'); 
+add_filter('nav_menu_link_attributes', 'liovettemoto_menu_link_class');

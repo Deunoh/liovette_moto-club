@@ -2,6 +2,18 @@
 Theme Name: Liovettemoto
 */
 
+:root {
+  --primary-color: #0e0d06;
+  --secondary-color: #1b1b1b;
+  --cta-color: #dca54a;
+  --cte-color-hover: #cf9947;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+
 /* Header */
 .navbar {
   background-color: #fff;
@@ -66,15 +78,35 @@ Theme Name: Liovettemoto
 
 .hero-container h1 {
   position: absolute;
+  font-family: "Oleo Script Swash Caps", serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   color: white;
-  font-size: 4rem;
+  font-size: clamp(3rem, 8vw, 6rem);
   text-align: center;
   width: 100%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+}
+
+.main-title-mobile{
+  font-family: "Oleo Script Swash Caps", serif;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-container h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding: 0 10px;
+  }
 }
 
 /* Video */
@@ -105,4 +137,89 @@ video {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+/* Section des derniers articles */
+
+.last-post-section {
+  background-color: var(--secondary-color);
+  padding: 40px 20px;
+}
+.last-post-section .row {
+  max-width: 60%; 
+  margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+  .last-post-section .row {
+    max-width: 90%; 
+  }
+}
+
+
+/* Style des cartes */
+.last-post-section .card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.last-post-section .card:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (hover: none) {
+  .last-post-section .card:hover {
+    transform: none; 
+    box-shadow: none;
+  }
+}
+
+/* Images des cartes */
+.bento-large .card-img-top {
+  width: 100%;
+  height: 350px; /* Taille plus grande pour le premier article */
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .bento-large .card-img-top {
+    height: 215px; /* Même hauteur que les cartes normales */
+  }
+}
+
+
+.bento-small .card-img-top {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+}
+
+/* Titre et texte */
+.bento-large .card-title {
+  font-size: 1.8rem; 
+}
+
+.bento-small .card-title {
+  font-size: 1.2rem; 
+}
+
+.bento-large .card-body {
+  padding: 1rem 1.5rem;
+}
+
+.bento-small .card-body {
+  padding: 1rem;
+}
+
+.custom-btn {
+  background-color: var(--cta-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.custom-btn:hover {
+  background-color: var(--cte-color-hover);
 }

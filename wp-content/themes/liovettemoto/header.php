@@ -15,11 +15,16 @@
     
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+        <h5 class="offcanvas-title main-title-mobile" id="offcanvasNavbarLabel">Liovette Club Beauvais</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+      <?php wp_nav_menu([
+        'theme_location' => 'header',
+        'container' => false,
+        'menu_class' => 'navbar-nav justify-content-center flex-grow-1 pe-3',
+      ]) ?>
+        <!-- <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
           </li>
@@ -35,7 +40,7 @@
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Contact</a>
           </li>
-        </ul>
+        </ul> -->
       
       </div>
     </div>
@@ -44,3 +49,4 @@
     </button>
   </div>
 </nav>
+<main>
