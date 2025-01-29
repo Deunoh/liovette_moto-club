@@ -35,13 +35,13 @@
               <?php get_template_part('parts/card', 'post'); ?>
             </div>
           </div>
-    <?php
+      <?php
         endif;
         $i++;
       endwhile;
       wp_reset_postdata(); // Important reinitilisé les données
     else :
-    ?>
+      ?>
       <p class="text-center">Aucun article trouvé.</p>
     <?php endif; ?>
   </div>
@@ -51,6 +51,27 @@
     <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="btn btn-secondary">Voir tous les articles</a>
   </div>
 </section>
+<section class="sponsors-section">
+    <div id="sponsorCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-around">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/leroy.png" class="sponsor-logo" alt="Leroy">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.png" class="sponsor-logo" alt="Sponsor">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.jpg" class="sponsor-logo" alt="Sponsor">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/leroy.png" class="sponsor-logo" alt="Leroy">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.png" class="sponsor-logo" alt="Sponsor">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.jpg" class="sponsor-logo" alt="Sponsor">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <?php get_footer(); ?>
