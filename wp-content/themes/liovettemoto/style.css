@@ -403,3 +403,41 @@ video {
   color: white;
 }
 
+/* Contact section */
+.contact-section {
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+#map, .contact-info {
+  min-height: 350px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-info {
+  text-align: left;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Ajuste pour que tout soit bien aligné */
+@media (max-width: 768px) {
+  #map, .contact-info {
+      min-height: 300px;
+  }
+}
+
+

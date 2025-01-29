@@ -17,8 +17,12 @@ function liovettemoto_register_assets()
 {
   wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
   wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', [], false, true); //Le dernier argument est pour dire si le script doit être chargé dans le footer ou non
+  wp_register_style('leaflet', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+  wp_register_script('leaflet', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js', [], false, true);
   wp_enqueue_style('bootstrap');
   wp_enqueue_script('bootstrap');
+  wp_enqueue_style('leaflet');
+  wp_enqueue_script('leaflet');
   wp_enqueue_style('liovettemoto', get_stylesheet_uri());
   wp_enqueue_style(
     'google-font-oleo',
@@ -28,6 +32,8 @@ function liovettemoto_register_assets()
 );
 wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css', array(), null);
 wp_enqueue_script('sponsor', get_template_directory_uri() . '/assets/js/sponsor.js', [], false, true);
+wp_enqueue_script('map', get_template_directory_uri() . '/assets/js/map.js', [], false, true);
+
 }
 
 // Pour les li dans le header
