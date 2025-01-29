@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -23,24 +23,6 @@
         'container' => false,
         'menu_class' => 'navbar-nav justify-content-center flex-grow-1 pe-3',
       ]) ?>
-        <!-- <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Histoire</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Contact</a>
-          </li>
-        </ul> -->
-      
       </div>
     </div>
     <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

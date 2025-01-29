@@ -5,12 +5,12 @@
     <video autoplay muted loop src="<?php echo get_stylesheet_directory_uri() ?>/assets/videos/mainvideo.mp4">
     </video>
     <h1>Liovette Club Beauvais</h1>
-  </div>
-</section>
+</div>
+<!-- Bannière ouverture du terrain -->
+ <?php require_once('parts/banner-opening.php') ?>
 <section class="last-post-section container-fluid py-5">
-  <h2 class="text-center mb-4 text-white">Derniers articles</h2>
+  <h2 class="text-center mb-4">Derniers articles</h2>
   <div class="row justify-content-center mx-auto">
-
     <?php
     // Requête pour les 3 derniers articles avec l'objet wpquery
     $recent_posts = new WP_Query([
@@ -97,6 +97,20 @@
 
         <img src="https://s7g10.scene7.com/is/image/ktm/GASGAS-Motocross-2025-medium:Medium?wid=1788&hei=1280&dpr=off"
           class="img-fluid rounded shadow mt-3" alt="KTM Motocross">
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="opening-hours-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-4">Nos horaires d'ouverture</h2>
+          <div class="opening-hours-container d-flex justify-content-center">
+            <?php echo do_shortcode('[open class="hours-right closed-italic past-fade" day_format="full_date_month" time_format="24_colon" update=true]'); ?>
+          </div>
+        </div>
       </div>
     </div>
   </div>
