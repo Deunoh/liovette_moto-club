@@ -9,7 +9,7 @@
   <!-- Bannière ouverture du terrain -->
   <?php require_once('parts/banner-opening.php') ?>
   <section class="last-post-section container-fluid py-5">
-    <h2 class="text-center mb-4">Derniers articles</h2>
+  <h2 class="text-center mb-4">📰 Derniers articles</h2>
     <div class="row justify-content-center mx-auto">
       <?php
       // Requête pour les 3 derniers articles avec l'objet wpquery
@@ -71,9 +71,9 @@
       </div>
     </div>
   </section>
-  <section class="py-5 bg-dark text-white">
+  <section class="py-5 bg-dark text-white" id="gallery">
     <div class="container">
-      <h2 class="text-center mb-4">Galerie photo</h2>
+    <h2 class="text-center mb-4">📸 Galerie photo</h2>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <img src="https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/motorcycles/tf450-rc%202025/family%20and%20variant%20page%20images/bikes-my25-motocross-tf-450-rc-770x770.png"
@@ -101,12 +101,12 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="opening-hours">
     <div class="opening-hours-section py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2 class="mb-4">Nos horaires d'ouverture</h2>
+          <h2 class="mb-4">⏰ Nos horaires d'ouverture</h2>
             <div class="opening-hours-container d-flex justify-content-center">
               <?php echo do_shortcode('[open class="hours-right closed-italic past-fade" day_format="full_date_month" time_format="24_colon" update=true]'); ?>
             </div>
@@ -115,7 +115,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-section py-5 bg-dark text-white">
+  <section class="contact-section py-5 bg-dark text-white" id="contact">
     <div class="container">
       <h2 class="text-center mb-4">📍 Contactez-nous</h2>
       <p class="text-center mb-5 lead">
@@ -130,9 +130,9 @@
         <div class="col-lg-4 d-flex">
           <div class="contact-info mb-4 mb-lg-0 p-4 rounded shadow bg-secondary d-flex flex-column justify-content-center">
             <h4 class="mb-3">📞 Contact principal</h4>
-            <p><strong>Nom :</strong> Jean Dupont</p>
-            <p><strong>Prénom :</strong> Michel</p>
-            <p><strong>Téléphone :</strong> <a href="tel:+33612345678" class="text-white">06 12 34 56 78</a></p>
+            <p><strong>Nom :</strong>Delaneuville</p>
+            <p><strong>Prénom :</strong>Jacky</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33683028298" class="text-white">06 83 02 82 98</a></p>
           </div>
         </div>
         <!-- Carte interactive -->
