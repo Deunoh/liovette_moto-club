@@ -9,7 +9,7 @@
   <!-- Bannière ouverture du terrain -->
   <?php require_once('parts/banner-opening.php') ?>
   <section class="last-post-section container-fluid py-5">
-  <h2 class="text-center mb-4">📰 Derniers articles</h2>
+  <h2 class="text-center mb-4">📰 Les dernières nouvelles</h2>
     <div class="row justify-content-center mx-auto">
       <?php
       // Requête pour les 3 derniers articles avec l'objet wpquery
