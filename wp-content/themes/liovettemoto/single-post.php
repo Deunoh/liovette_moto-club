@@ -6,11 +6,13 @@
       <!-- Image mise en avant en plein écran -->
       <?php if (has_post_thumbnail()) : ?>
         <div class="post-header position-relative">
-          <img src="<?php the_post_thumbnail_url('full'); ?>" class="img-fluid w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
-          <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white" style="background: rgba(0, 0, 0, 0.5);">
-            <h1 class="fw-bold text-center"><?php the_title(); ?></h1>
-          </div>
+          <a href="<?php the_post_thumbnail_url('full'); ?>" target="_blank">
+            <img src="<?php the_post_thumbnail_url('full'); ?>"
+              class="img-fluid w-100"
+              style="height: 400px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+          </a>
         </div>
+        <h1 class="fw-bold text-center mt-3"><?php the_title(); ?></h1>
       <?php else : ?>
         <h1 class="fw-bold text-center mt-5"><?php the_title(); ?></h1>
       <?php endif; ?>
@@ -90,7 +92,6 @@
             </div>
           </div>
 
-
           <!-- Bouton retour à l'accueil -->
           <div class="mt-4 text-center">
             <a href="<?php echo home_url('/'); ?>" class="btn btn-secondary">
@@ -104,18 +105,19 @@
   <?php endwhile;
   endif; ?>
 </div>
+
 <!-- Section des commentaires -->
 <div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <?php if (comments_open() || get_comments_number()) : ?>
-                <div class="comments-section bg-dark p-4 rounded text-white">
-                    <h3 class="mb-4">💬 Commentaires</h3>
-                    <?php comments_template(); ?>
-                </div>
-            <?php endif; ?>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <?php if (comments_open() || get_comments_number()) : ?>
+        <div class="comments-section bg-dark p-4 rounded text-white">
+          <h3 class="mb-4">💬 Commentaires</h3>
+          <?php comments_template(); ?>
         </div>
+      <?php endif; ?>
     </div>
+  </div>
 </div>
 
 <?php get_footer(); ?>

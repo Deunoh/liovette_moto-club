@@ -130,8 +130,8 @@
         <div class="col-lg-4 d-flex">
           <div class="contact-info mb-4 mb-lg-0 p-4 rounded shadow bg-secondary d-flex flex-column justify-content-center">
             <h4 class="mb-3">📞 Contact principal</h4>
-            <p><strong>Nom :</strong>Delaneuville</p>
-            <p><strong>Prénom :</strong>Jacky</p>
+            <p><strong>Nom :</strong> Delaneuville</p>
+            <p><strong>Prénom :</strong> Jacky</p>
             <p><strong>Téléphone :</strong> <a href="tel:+33683028298" class="text-white">06 83 02 82 98</a></p>
           </div>
         </div>
