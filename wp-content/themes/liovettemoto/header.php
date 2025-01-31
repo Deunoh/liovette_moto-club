@@ -4,10 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-      name="description"
-      content="Liovette Club Beauvais – Terrain de motocross à Beauvais agréé FFM.">
-    />
+  <meta name="description" content="Liovette Club Beauvais – Terrain de motocross à Beauvais agréé FFM.">
   <?php wp_head(); ?>
 </head>
 
