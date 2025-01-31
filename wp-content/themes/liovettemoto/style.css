@@ -9,6 +9,25 @@ Theme Name: Liovettemoto
   --cta-color-hover: #dca54a;
   --main-font: "Oleo Script Swash Caps", serif;
 }
+/* Animation appear */
+@keyframes appear {
+  from {
+    opacity: 0;
+    translate: 0 50px;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+.scroll-appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 
 body {
   background-color: var(--primary-color);
@@ -45,6 +64,21 @@ h2 {
   padding: 0.5rem;
   border-radius: 20px;
   transition: 0.3s ease-in-out;
+}
+.navbar {
+  animation: slideDown 0.5s ease-out;
+  transform-origin: top;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .navbar-brand {
   font-weight: 500;
@@ -111,6 +145,18 @@ h2 {
   width: 100%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 0 20px;
+  animation: heroTitle 1.5s ease-out;
+}
+
+@keyframes heroTitle {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .main-title-mobile{
@@ -572,4 +618,78 @@ footer a:hover {
   background: var(--secondary-color);
   padding: 60px 0;
   border-radius: 10px;
+}
+
+/* LOADER */
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  perspective: 780px;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: var(--cta-color);
+  border-bottom-color: var(--cta-color);
+  animation: wheel 2s linear infinite;
+}
+
+.loader:before {
+  border-width: 10px;
+  transform: rotate(45deg);
+}
+
+.loader:after {
+  border-width: 15px;
+  transform: rotate(-45deg);
+}
+
+@keyframes wheel {
+  from {
+      transform: rotate(0deg) scale(1);
+  }
+  50% {
+      transform: rotate(180deg) scale(0.8);
+  }
+  to {
+      transform: rotate(360deg) scale(1);
+  }
+}
+
+.loader::after {
+  filter: drop-shadow(0 0 10px var(--cta-color));
+}
+
+.preloader-hide {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
 }

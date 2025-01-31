@@ -29,11 +29,17 @@ function liovettemoto_register_assets()
     'https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap',
     [],
     null
-);
-wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css', array(), null);
-wp_enqueue_script('sponsor', get_template_directory_uri() . '/assets/js/sponsor.js', [], false, true);
-wp_enqueue_script('map', get_template_directory_uri() . '/assets/js/map.js', [], false, true);
-
+  );
+  wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css', array(), null);
+  wp_enqueue_script('sponsor', get_template_directory_uri() . '/assets/js/sponsor.js', [], false, true);
+  wp_enqueue_script('map', get_template_directory_uri() . '/assets/js/map.js', [], false, true);
+  wp_enqueue_script(
+    'preloader-js',
+    get_template_directory_uri() . '/assets/js/preloader.js',
+    array(),
+    null,
+    true
+  );
 }
 
 // Pour les li dans le header
@@ -49,28 +55,25 @@ function liovettemoto_menu_link_class(array $atts): array
   return $atts;
 }
 // Ajout de la catégorie important lors de l'activation du thème 
-function create_important_category() {
+function create_important_category()
+{
   $category_name = 'important';
   $category_slug = 'important';
 
   // Vérifie si la catégorie existe déjà
   if (!term_exists($category_name, 'category')) {
-      wp_insert_term(
-          $category_name, 
-          'category',    
-          array(
-              'slug' => $category_slug 
-          )
-      );
+    wp_insert_term(
+      $category_name,
+      'category',
+      array(
+        'slug' => $category_slug
+      )
+    );
   }
 }
 
 add_action('after_switch_theme', 'create_important_category');
-add_action('after_setup_theme', 'liovettemoto_support'); 
+add_action('after_setup_theme', 'liovettemoto_support');
 add_action('wp_enqueue_scripts', 'liovettemoto_register_assets');
-add_filter('nav_menu_css_class', 'liovettemoto_menu_class'); 
+add_filter('nav_menu_css_class', 'liovettemoto_menu_class');
 add_filter('nav_menu_link_attributes', 'liovettemoto_menu_link_class');
-
-
-
-
