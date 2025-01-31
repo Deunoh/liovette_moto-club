@@ -7,6 +7,7 @@ Theme Name: Liovettemoto
   --secondary-color: #1b1b1b;
   --cta-color: #cf9947;
   --cta-color-hover: #dca54a;
+  --main-font: "Oleo Script Swash Caps", serif;
 }
 
 body {
@@ -17,7 +18,7 @@ h2 {
   color: #fff;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  font-family: "Oleo Script Swash Caps", serif;
+  font-family: var(--main-font);
 }
 
 /* Header */
@@ -99,7 +100,7 @@ h2 {
 
 .hero-container h1 {
   position: absolute;
-  font-family: "Oleo Script Swash Caps", serif;
+  font-family: var(--main-font);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -113,7 +114,7 @@ h2 {
 }
 
 .main-title-mobile{
-  font-family: "Oleo Script Swash Caps", serif;
+  font-family: var(--main-font);
 }
 
 @media screen and (max-width: 768px) {
@@ -254,7 +255,6 @@ video {
   background-color: var(--cta-color);
   color: white;
   border: none;
-  /* border-radius: 20px; */
   padding: 10px 20px;
   font-weight: 500;
   transition: 0.3s ease-in-out;
@@ -527,4 +527,49 @@ footer a:hover {
   background: white;
   color: var(--cta-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* A propos */
+
+.hero {
+  background: var(--secondary-color);
+  padding: 8rem 0 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--cta-color);
+  font-size: 3rem;
+  font-family: var(--main-font);
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.circuit-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.values {
+  background: var(--secondary-color);
+  padding: 50px 0;
+}
+
+.value-box {
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  border: 1px solid var(--cta-color);
+}
+
+.history-section {
+  background: var(--secondary-color);
+  padding: 60px 0;
+  border-radius: 10px;
 }

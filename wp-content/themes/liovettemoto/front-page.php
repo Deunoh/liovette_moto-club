@@ -9,7 +9,7 @@
   <!-- Bannière ouverture du terrain -->
   <?php require_once('parts/banner-opening.php') ?>
   <section class="last-post-section container-fluid py-5">
-  <h2 class="text-center mb-4">📰 Les dernières nouvelles</h2>
+    <h2 class="text-center mb-4">📰 Les dernières nouvelles</h2>
     <div class="row justify-content-center mx-auto">
       <?php
       // Requête pour les 3 derniers articles avec l'objet wpquery
@@ -58,14 +58,14 @@
           <div class="d-flex justify-content-around">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/leroy.png" class="sponsor-logo" alt="Leroy">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.png" class="sponsor-logo" alt="Sponsor">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.jpg" class="sponsor-logo" alt="Sponsor">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/motoandcologo.jpg" class="sponsor-logo" alt="Sponsor">
           </div>
         </div>
         <div class="carousel-item">
           <div class="d-flex justify-content-around">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/leroy.png" class="sponsor-logo" alt="Leroy">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.png" class="sponsor-logo" alt="Sponsor">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.jpg" class="sponsor-logo" alt="Sponsor">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/motoandcologo.jpg" class="sponsor-logo" alt="Sponsor">
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
   </section>
   <section class="py-5 bg-dark text-white" id="gallery">
     <div class="container">
-    <h2 class="text-center mb-4">📸 Galerie photo</h2>
+      <h2 class="text-center mb-4">📸 Galerie photo</h2>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <img src="https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/motorcycles/tf450-rc%202025/family%20and%20variant%20page%20images/bikes-my25-motocross-tf-450-rc-770x770.png"
@@ -106,9 +106,12 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-          <h2 class="mb-4">⏰ Nos horaires d'ouverture</h2>
-            <div class="opening-hours-container d-flex justify-content-center">
+            <h2 class="mb-4">⏰ Nos horaires d'ouverture</h2>
+            <div class="opening-hours-container d-flex justify-content-center flex-column align-items-center">
               <?php echo do_shortcode('[open class="hours-right closed-italic past-fade" day_format="full_date_month" time_format="24_colon" update=true]'); ?>
+              <small class="text-center text-muted mt-3">
+                Les entraînements ont lieu le <strong>samedi</strong>, <strong>dimanche</strong> et les <strong>jours fériés</strong>.
+              </small>
             </div>
           </div>
         </div>
