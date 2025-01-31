@@ -315,6 +315,7 @@ video {
 }
 
 /* Single post */
+
 .custom-post, .custom-home {
   background-color: var(--secondary-color);
   padding-top: 10rem;

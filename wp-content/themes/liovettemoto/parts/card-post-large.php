@@ -15,7 +15,7 @@
   <?php if (has_post_thumbnail()) : ?>
     <img src="<?php the_post_thumbnail_url('large'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
   <?php else : ?>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/circuit.jpg" class="card-img-top" alt="<?php the_title(); ?>">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/default.png" class="card-img-top" alt="<?php the_title(); ?>">
   <?php endif; ?>
   <div class="card-body">
     <h3 class="card-title"><?php the_title(); ?></h3>

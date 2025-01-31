@@ -16,7 +16,7 @@
   <?php if (has_post_thumbnail()) : ?>
     <img src="<?php the_post_thumbnail_url('medium'); ?>" class="card-img-top" alt="<?php the_title(); ?>">
   <?php else : ?>
-    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/circuit.jpg" class="card-img-top" alt="<?php the_title(); ?>">
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/default.png" class="card-img-top" alt="<?php the_title(); ?>">
   <?php endif; ?>
   <div class="card-body d-flex flex-column text-light">
     <h5 class="card-title text-light"><?php the_title(); ?></h5>
