@@ -57,9 +57,11 @@ h2 {
   width: auto;
 }
 .navbar {
+  border: 2px solid #e95420;
+  box-shadow: 0 0 8px rgba(233, 84, 32, 0.6);
   background-color: #fff;
   height: 80px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   margin: 20px;
   padding: 0.5rem;
   border-radius: 20px;
@@ -320,11 +322,15 @@ video {
   background-color: var(--secondary-color);
   padding-top: 10rem;
   min-height: 100vh;
+  border-radius: 0 0 20px 20px;
+}
+.custom-home h1{
+  font-family: var(--main-font);
 }
 .comments-section {
   background-color: var(--secondary-color);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 

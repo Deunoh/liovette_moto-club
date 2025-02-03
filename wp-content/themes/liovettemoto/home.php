@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container mt-7 custom-home">
+<div class="container mt-7 mb-4 custom-home">
     <h1 class="text-center mb-5 text-white">Tous les articles</h1>
 
     <div class="row">
@@ -17,7 +17,7 @@
     </div>
 
     <!-- Bouton retour à l'accueil -->
-    <div class="mt-4 text-center">
+    <div class="mt-4 pb-4 text-center">
         <a href="<?php echo home_url('/'); ?>" class="btn btn-secondary">
             <i class="bi bi-arrow-left-circle"></i> Retour à l'accueil
         </a>

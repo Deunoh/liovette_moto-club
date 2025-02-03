@@ -107,11 +107,11 @@
 </div>
 
 <!-- Section des commentaires -->
-<div class="container mt-5">
+<div class="container mt-5 mb-4">
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <?php if (comments_open() || get_comments_number()) : ?>
-        <div class="comments-section bg-dark p-4 rounded text-white">
+        <div class="comments-section bg-dark p-4 text-white">
           <h3 class="mb-4">💬 Commentaires</h3>
           <?php comments_template(); ?>
         </div>
