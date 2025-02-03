@@ -62,14 +62,14 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex justify-content-around">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/leroy.png" class="sponsor-logo" alt="Leroy">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/ffm_logo.png" class="sponsor-logo" alt="Sponsor">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.png" class="sponsor-logo" alt="Sponsor">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/motoandcologo.jpg" class="sponsor-logo" alt="Sponsor">
           </div>
         </div>
         <div class="carousel-item">
           <div class="d-flex justify-content-around">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/leroy.png" class="sponsor-logo" alt="Leroy">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/ffm_logo.png" class="sponsor-logo" alt="Leroy">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/images.png" class="sponsor-logo" alt="Sponsor">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sponsors/motoandcologo.jpg" class="sponsor-logo" alt="Sponsor">
           </div>
