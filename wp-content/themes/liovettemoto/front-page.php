@@ -12,7 +12,7 @@
     <!-- Note d'information sur la licence -->
     <div class="container text-center mb-3">
       <p class="bg-dark text-white py-2 px-3 rounded d-inline-block">
-        ℹ️ Une <strong>licence FFM</strong> est obligatoire pour rouler sur le circuit. <a href="https://www.ffmoto.org/" target="_blank" class="text-warning fw-bold">Obtenez la vôtre ici</a>.
+        ℹ️ Une <strong>licence FFM</strong> est obligatoire pour rouler sur le circuit. (Réf. Liovette C3290) <a href="https://www.ffmoto.org/" target="_blank" class="text-warning fw-bold">Obtenez la vôtre ici</a>.
       </p>
     </div>
     <h2 class="text-center mb-4">📰 Les dernières nouvelles</h2>
