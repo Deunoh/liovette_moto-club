@@ -2,7 +2,7 @@
 
 <section>
   <div class="hero-container">
-    <video autoplay muted loop src="<?php echo get_stylesheet_directory_uri() ?>/assets/videos/mainvideo.mp4">
+    <video autoplay muted loop playsinline src="<?php echo get_stylesheet_directory_uri() ?>/assets/videos/mainvideo.mp4">
     </video>
     <h1>Liovette Club Beauvais</h1>
   </div>
@@ -139,9 +139,9 @@
         <div class="col-lg-4 d-flex scroll-appear">
           <div class="contact-info mb-4 mb-lg-0 p-4 rounded shadow bg-secondary d-flex flex-column justify-content-center">
             <h4 class="mb-3">📞 Contact principal</h4>
-            <p><strong>Nom :</strong> Delaneuville</p>
-            <p><strong>Prénom :</strong> Jacky</p>
-            <p><strong>Téléphone :</strong> <a href="tel:+33683028298" class="text-white">06 83 02 82 98</a></p>
+            <p><strong>Nom :</strong> Belloir</p>
+            <p><strong>Prénom :</strong> Denovann</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33607080910" class="text-white">06 07 08 09 10</a></p>
           </div>
         </div>
         <!-- Carte interactive -->
