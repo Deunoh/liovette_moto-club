@@ -31,6 +31,7 @@ Theme Name: Liovettemoto
 
 body {
   background-color: var(--primary-color);
+  position: relative;
 }
 
 h2 {
@@ -61,6 +62,8 @@ h2 {
   transform: scale(1.1);
 }
 .navbar {
+  position: absolute;
+  top: 0;
   border: 2px solid #e95420;
   box-shadow: 0 0 8px rgba(233, 84, 32, 0.6);
   background-color: #fff;
@@ -703,6 +706,42 @@ footer a:hover {
       opacity: 0;
       visibility: hidden;
   }
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--cta-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--cta-color-hover);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.back-to-top::after {
+  content: '↑';
 }
 
 /* Calendar */

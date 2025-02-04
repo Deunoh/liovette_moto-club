@@ -42,6 +42,7 @@ function liovettemoto_register_assets()
   );
   wp_enqueue_style('events', get_template_directory_uri() . '/tribe-events/tribe-events.css');
   wp_enqueue_script('imageLink', get_template_directory_uri() . '/assets/js/imageLink.js', [], false, true);
+  wp_enqueue_script('backtotop', get_template_directory_uri() . '/assets/js/backToTop.js', [], false, true);
 }
 
 // Pour les li dans le header
