@@ -704,3 +704,9 @@ footer a:hover {
       visibility: hidden;
   }
 }
+
+/* Calendar */
+.tribe-common {
+  /* height: 100vh; */
+  padding-top: 4rem;
+}
